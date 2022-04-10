@@ -8,6 +8,7 @@ export class ClienteRoutes {
 
     public ruta(app: Application) {
 
-        app.route("/clientes").get(this.clienteController.index)
+        app.route("/clientes").get(this.clienteController.index);
+        app.route("/clientes").post(this.clienteController.create);
     }
 }
