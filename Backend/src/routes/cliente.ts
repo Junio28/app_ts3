@@ -10,6 +10,7 @@ export class ClienteRoutes {
 
         app.route("/clientes").get(this.clienteController.index);
         app.route("/clientes").post(this.clienteController.create);
+        app.route("/clientes/:id").put(this.clienteController.update);
         app.route("/clientes/:id").delete(this.clienteController.delete);
     }
 }
