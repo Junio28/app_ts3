@@ -7,6 +7,7 @@ import { MenuComponent } from './componenets/layouts/main/header/menu/menu.compo
 import { CopyrightComponent } from './componenets/layouts/main/footer/copyright/copyright.component';
 import { FormLoginComponent } from './componenets/user/form-login/form-login.component';
 import { TituloComponent } from './componenets/layouts/main/content/titulo/titulo.component';
+import { ClientListComponent } from './componenets/client/client-list/client-list.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TituloComponent } from './componenets/layouts/main/content/titulo/titul
     MenuComponent,
     CopyrightComponent,
     FormLoginComponent,
-    TituloComponent
+    TituloComponent,
+    ClientListComponent
   ],
   imports: [
     BrowserModule,
