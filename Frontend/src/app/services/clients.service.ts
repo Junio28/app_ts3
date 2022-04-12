@@ -11,7 +11,7 @@ export class ClientsService {
 
   constructor(private http: HttpClient) { }
 
-  getUsers() {
+  getClients() {
     return this.http.get(`${this.API_URI}/clientes`);
   }
 }

@@ -1,5 +1,7 @@
 import express, { Application   } from 'express';
 import morgan from 'morgan';
+const cors = require('cors');
+
 import { Routes } from '../routes/index';
 
  export class App {
@@ -21,6 +23,7 @@ import { Routes } from '../routes/index';
 
     private middlewares() {
         this.app.use(morgan('dev'));
+        this.app.use(cors());
         this.app.use(express.json()); //valores tipo JSON
         this.app.use(express.urlencoded({ extended: false})); //valores formulario
   
