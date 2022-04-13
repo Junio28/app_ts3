@@ -1,2 +1,33 @@
-<p>client-list works!</p>
-{{clients|json}}
+<h2>Listado de Clientes</h2>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>NOMBRES</th>
+            <th>APELLIDOS</th>
+            <th>CORREO</th>
+            <th>TELEFONOS</th>
+            <th>CELULAR</th>
+            <th>FECHA DE NACIMIENTO</th>
+            <th>DIRECCIÓN</th>
+            <th>createdAt</th>
+            <th>updatedAt</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let client of clients">
+            <td>{{client.id}}</td>
+            <td>{{client.nombres}}</td>
+            <td>{{client.apellidos}}</td>
+            <td>{{client.correo}}</td>
+            <td>{{client.telefonos}}</td>
+            <td>{{client.celular}}</td>
+            <td>{{client.fechaNacimiento}}</td>
+            <td>{{client.direccion}}</td>
+            <td>{{client.createdAt}}</td>
+            <td>{{client.updatedAt}}</td>
+           
+        </tr>
+    </tbody>
+</table>
