@@ -8,6 +8,7 @@ import { ClientI } from '../models/client-i';
 export class ClientsService {
 
   API_URI = 'http://localhost:5000';
+  client: ClientI | undefined;
 
   constructor(private http: HttpClient) { }
 
@@ -17,5 +18,9 @@ export class ClientsService {
 
   deleteClient(id: string)  {
     return this.http.delete(`${this.API_URI}/clientes/${id}`);
+  }
+
+  addClient(client: ClientI)  {
+    return this.http.post(`${this.API_URI}/clientes`,client);
   }
 }
