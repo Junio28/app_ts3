@@ -26,4 +26,8 @@ export class ClientListComponent implements OnInit {
     );
   }
 
+  deleteClient(id:string) {
+    console.log(id)
+  }
+
 }
