@@ -10,6 +10,7 @@ import { FormLoginComponent } from './componenets/user/form-login/form-login.com
 import { TituloComponent } from './componenets/layouts/main/content/titulo/titulo.component';
 import { ClientListComponent } from './componenets/client/client-list/client-list.component';
 import { ClientsService } from './services/clients.service';
+import { CreateClientComponent } from './componenets/client/create-client/create-client.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ClientsService } from './services/clients.service';
     CopyrightComponent,
     FormLoginComponent,
     TituloComponent,
-    ClientListComponent
+    ClientListComponent,
+    CreateClientComponent
   ],
   imports: [
     BrowserModule,
