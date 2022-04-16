@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: 'cliente/nuevo',
     component: CreateClientComponent
+  },
+  {
+    path: 'cliente/editar/:id',
+    component: CreateClientComponent
   }
 ];
 

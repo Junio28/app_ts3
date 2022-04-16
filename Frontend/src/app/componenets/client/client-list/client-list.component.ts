@@ -36,4 +36,8 @@ export class ClientListComponent implements OnInit {
     )
   }
 
+  editClient(id:string){
+    console.log(id)
+  }
+
 }
