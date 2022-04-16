@@ -27,7 +27,8 @@ export class CreateClientComponent implements OnInit {
   constructor(private clientsService: ClientsService, private router: Router, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
-    // const params =  this.activatedRoute.snapshot.params;
+    const params =  this.activatedRoute.snapshot.params;
+    console.log(params)
   }
 
   saveNewClient(){
