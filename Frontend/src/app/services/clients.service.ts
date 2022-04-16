@@ -16,6 +16,10 @@ export class ClientsService {
     return this.http.get(`${this.API_URI}/clientes`);
   }
 
+  getClient(id: string) {
+    return this.http.get(`${this.API_URI}/clientes/${id}`);
+  }
+
   deleteClient(id: string)  {
     return this.http.delete(`${this.API_URI}/clientes/${id}`);
   }

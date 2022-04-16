@@ -24,11 +24,23 @@ export class CreateClientComponent implements OnInit {
       direccion: ''
 }
 
+  edit: boolean= false;
   constructor(private clientsService: ClientsService, private router: Router, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
     const params =  this.activatedRoute.snapshot.params;
-    console.log(params)
+    if(params['id']){
+      this.clientsService.getClient(params['id'])
+        .subscribe(
+          res=>{
+            console.log(res);
+            this.client = res;
+            this.edit = true;
+          },
+          err=>console.error(err)
+
+        )
+    }
   }
 
   saveNewClient(){
