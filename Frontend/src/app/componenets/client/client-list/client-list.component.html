@@ -25,7 +25,7 @@
             <td>{{client.fechaNacimiento}}</td>
             <td>{{client.direccion}}</td>
            <td>
-            <a class="btn btn-warning" (click)="editClient(client.id)"><i class="fa fa-edit" aria-hidden="true"></i></a> 
+            <a [routerLink]="['/cliente/editar', client.id]" class="btn btn-warning"><i class="fa fa-edit" aria-hidden="true"></i></a> 
                <button class="btn btn-danger" (click)="deleteClient(client.id)">
                    <i class="fa fa-eraser" aria-hidden="true"></i></button></td> 
            
