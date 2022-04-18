@@ -27,4 +27,10 @@ export class ClientsService {
   addClient(client: ClientI)  {
     return this.http.post(`${this.API_URI}/clientes`,client);
   }
+
+  updateClient(id: string | number, updatedClient: ClientI){
+    return this.http.put(`${this.API_URI}/clientes/${id}`,updatedClient);
+  }
+
+  
 }

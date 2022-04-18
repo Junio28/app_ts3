@@ -30,6 +30,6 @@
         <input type="text" [(ngModel)]="client.direccion" class="form-control" name="direccion"  placeholder="Ingrese Dirección">
       </div>
       <hr>
-      <button class="btn btn-primary" (click)="saveNewClient()">Añadir</button>
+      <button class="btn btn-primary" (click)="edit ? updateClient() : saveNewClient()">Añadir</button>
      
   </form>

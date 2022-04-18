@@ -54,5 +54,18 @@ export class CreateClientComponent implements OnInit {
     )
   }
 
+  updateClient(){
+    console.log(this.client);
+        this.clientsService.updateClient(this.client.id, this.client)
+        .subscribe(
+          res=>{
+            this.router.navigate(['/cliente']);
+            console.log(res);
+          },
+          err=> console.log(err)
+        )
+    }
+
+
 
 }
